@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  api:
+    image: alsylla/rust-api-demo
+    hostname: rust-api-demo
+    container_name: rust-api-demo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
